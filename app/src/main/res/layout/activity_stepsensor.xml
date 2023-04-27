@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.stepsensor">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:layout_marginBottom="20dp"
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:cpb_background_progressbar_color="#AFB2B3"
+        app:cpb_background_progressbar_width="10dp"
+        app:cpb_progressbar_color="@color/blueblue"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_progress_max="2500"
+        app:cpb_round_border="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:text="....."
+        android:layout_marginLeft="@dimen/spacing_5dp"
+        app:layout_constraintTop_toBottomOf="@id/theSteps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/heartData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:text="Steps + Heart Rate"
+        android:textSize="20dp"
+        android:id="@+id/stepName"
+        app:layout_constraintBottom_toTopOf="@+id/theSteps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:text="7"
+        android:textSize="@dimen/spacing_40dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/stepName"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintRight_toRightOf="@+id/progressBar"
+        app:layout_constraintLeft_toLeftOf="@+id/progressBar"
+        android:id="@+id/theSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:id="@+id/reset_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Steps"
+        app:layout_constraintTop_toBottomOf="@id/Leaderboards"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnsupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push To Cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:id="@+id/Leaderboards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leaderboards"
+        app:layout_constraintTop_toBottomOf="@id/btnsupload"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/move"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/scoreis"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="10dp"
+    android:id="@+id/mainConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:background="?selectableItemBackground"
+    >
+
+
+    <ImageView
+        app:layout_constraintRight_toLeftOf="@id/textViewCustomAdapter"
+        android:id="@+id/imageViewForUser"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userchatsmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageViewForUser"
+        android:id="@+id/textViewCustomAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saad"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/messageOnMessenger"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/viewID"
+        app:layout_constraintTop_toBottomOf="@id/textViewCustomAdapter"
+        />
+
+
+
+    <View
+
+        android:id="@+id/viewID"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewCustomAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

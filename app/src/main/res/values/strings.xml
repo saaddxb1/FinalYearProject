@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stay Healthy</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <string name="forg0t_password">FORG0T PASSWORD</string>
+    <string name="send_instruction">Send Instruction</string>
+    <string name="enter_your_email_you_used_when_you_joined_and_we_will_send_you_instructions_to_reset_your_password">Enter the email you used when you joined, and we will send you instructions to reset your password.</string>
+    <string name="for_security_reasons_we_do_not_store_your_password_so_rest_assured_that_we_will_never_share_your_password_via_your_email">Keeping your personal data safe is our first priority! </string>
+
+
+</resources>

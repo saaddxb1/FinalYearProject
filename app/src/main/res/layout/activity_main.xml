@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserListActivity"
+    android:background="@color/white"
+    >
+
+   <TextView
+       app:layout_constraintBottom_toBottomOf="@id/searchView"
+       android:textColor="@color/blueblue"
+       android:text="My Chats"
+       android:textSize="@dimen/spacing_25dp"
+       android:id="@+id/chatName"
+       android:textAlignment="center"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/RecycleViewChat"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+
+       />
+
+
+   <androidx.appcompat.widget.SearchView
+       android:layout_marginBottom="@dimen/_10sdp"
+       android:id="@+id/searchView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/chatName"
+       app:layout_constraintBottom_toTopOf="@id/RecycleViewChat" />
+
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/RecycleViewChat"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+
+       app:layout_constraintTop_toBottomOf="@id/searchView" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

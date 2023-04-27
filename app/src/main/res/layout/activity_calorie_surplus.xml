@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieSurplus">
+
+    <ImageView
+        android:layout_marginTop="@dimen/spacing_30dp"
+        android:id="@+id/eatMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gainweight"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/eatMore"
+        android:id="@+id/caloriedeficit"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/caloriesurplus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:layout_marginLeft="@dimen/spacing_10dp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintBottom_toTopOf="@+id/eatMore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defination : A caloric surplus is when the number of calories that we consume is higher than the number of calories we burn."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

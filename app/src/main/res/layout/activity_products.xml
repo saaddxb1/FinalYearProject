@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.products"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_marginTop="@dimen/spacing_30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textDesired"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plan"
+        app:layout_constraintBottom_toTopOf="@id/constraintForDiet"
+        />
+
+    <TextView
+        android:id="@+id/textDesired"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your desired generic diet plan."
+        android:textSize="@dimen/_20sdp"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintForDiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/roundbutton"
+            android:textAllCaps="false"
+            android:text="Calorie Surplus"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/buttonMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginBottom="@dimen/spacing_15dp"
+            android:background="@drawable/roundbutton"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/buttonMiddle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/buttonLeft"
+            android:text="Calorie Deficit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/roundbutton"
+            android:textAllCaps="false"
+            android:text="High Protein Food"
+            android:id="@+id/highProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/buttonMiddle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ImageView
+        android:id="@+id/thinkin"
+        android:layout_marginBottom="@dimen/spacing_10dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintForDiet"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@drawable/whattoeat"
+         />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
