@@ -11,5 +11,6 @@ class CalorieSurplus : AppCompatActivity() {
         if (getSupportActionBar() != null) {
             getSupportActionBar()?.hide();
         }
+        //asd
     }
 }
